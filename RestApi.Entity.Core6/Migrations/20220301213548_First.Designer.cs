@@ -12,8 +12,8 @@ using RestApi.Entity.Core6.Modelos;
 namespace RestApi.Entity.Core6.Migrations
 {
     [DbContext(typeof(Db_Context))]
-    [Migration("20220301032603_firstMigration")]
-    partial class firstMigration
+    [Migration("20220301213548_First")]
+    partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,6 +34,9 @@ namespace RestApi.Entity.Core6.Migrations
 
                     b.Property<DateTime>("Data_Nascimento")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("EnderecoId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Nome")
                         .IsRequired()

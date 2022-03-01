@@ -9,6 +9,8 @@ namespace RestApi.Entity.Core6
         [Key]
         public int Id { get; set; }
 
+        public int EnderecoId { get; set; }
+
         [Required, MaxLength(100)]
         public string Nome { get; set; }
 
@@ -16,6 +18,9 @@ namespace RestApi.Entity.Core6
 
         [NotMapped]
         public string Idade { get; set; }
+     
 
     }
+
 }
+

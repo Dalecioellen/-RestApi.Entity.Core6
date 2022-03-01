@@ -33,6 +33,9 @@ namespace RestApi.Entity.Core6.Migrations
                     b.Property<DateTime>("Data_Nascimento")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<int>("EnderecoId")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(100)
